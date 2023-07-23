@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
               turns: myAngle,
               child: CircleAvatar(
                 backgroundColor: Colors.brown.withOpacity(0.31),
-                radius: 200,
+                radius: 210,
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => setState(() => myAngle -= 1),
+        onPressed: () => setState(() => myAngle += 1),
         child: const Icon(Icons.rotate_right_outlined),
       ),
     );
